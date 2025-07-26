@@ -1,0 +1,7 @@
+D:\Software\kafka_2.13-3.5.0\bin\windows>zookeeper-server-start.bat ../../config/zookeeper.properties
+
+D:\Software\kafka_2.13-3.5.0\bin\windows>kafka-server-start.bat ../../config/server.properties
+
+D:\Software\kafka_2.13-3.5.0\bin\windows>kafka-console-producer.bat --topic order-created --bootstrap-server localhost:9092
+
+D:\Software\kafka_2.13-3.5.0\bin\windows>kafka-console-consumer.bat --topic order-created --from-beginning --bootstrap-server localhost:9092
